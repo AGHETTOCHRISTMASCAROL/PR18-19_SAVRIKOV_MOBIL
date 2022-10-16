@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ivanov_pr1819_mobil.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ivanov_pr1819_mobil.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ivanov_pr1819_mobil.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_ram"
+        android:name="com.example.ivanov_pr1819_mobil.ui.ram.RamFragment"
+        android:label="@string/menu_ram"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_hdd"
+        android:name="com.example.ivanov_pr1819_mobil.ui.hdd.HddFragment"
+        android:label="@string/menu_hdd"
+        tools:layout="@layout/fragment_hdd" />
+    <fragment
+        android:id="@+id/nav_gpu"
+        android:name="com.example.ivanov_pr1819_mobil.ui.gpu.GpuFragment"
+        android:label="@string/menu_gpu"
+        tools:layout="@layout/fragment_gpu" />
+    <fragment
+        android:id="@+id/nav_bp"
+        android:name="com.example.ivanov_pr1819_mobil.ui.bp.BpFragment"
+        android:label="@string/menu_bp"
+        tools:layout="@layout/fragment_bp" />
+    <fragment
+        android:id="@+id/nav_case"
+        android:name="com.example.ivanov_pr1819_mobil.ui.case.CaseFragment"
+        android:label="@string/menu_case"
+        tools:layout="@layout/fragment_case" />
+    <fragment
+        android:id="@+id/nav_monitor"
+        android:name="com.example.ivanov_pr1819_mobil.ui.monitor.MonitorFragment"
+        android:label="@string/menu_monitor"
+        tools:layout="@layout/fragment_monitor" />
+
+
+</navigation>
