@@ -5,7 +5,8 @@
     <string name="nav_header_title">Справочник компонентов ПК</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Information</string>
+    <string name="exit">Exit</string>
 
     <string name="menu_home">00. Введение</string>
     <string name="menu_gallery">01. Процессор</string>

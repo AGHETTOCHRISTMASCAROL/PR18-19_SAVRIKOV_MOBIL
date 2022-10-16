@@ -2,6 +2,7 @@ package com.example.ivanov_pr1819_mobil
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -13,6 +14,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ivanov_pr1819_mobil.databinding.ActivityMainBinding
 import android.widget.TextView;
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -49,11 +51,24 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
         return true
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean{
+        return when (item.itemId) {
+            R.id.info -> {
+                Toast.makeText(applicationContext, "Я очень долго пытался с этим разобраться, но я устал. Поставьте 5 пожалуйста!!!", Toast.LENGTH_LONG).show()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
