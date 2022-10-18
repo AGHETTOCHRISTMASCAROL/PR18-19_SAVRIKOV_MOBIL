@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.hdd.HddFragment">
 
     <ScrollView
         android:layout_width="409dp"
@@ -26,13 +27,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
-                android:src="@drawable/ozy" />
+                android:src="@drawable/hdd" />
 
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
-                android:layout_height="410dp"
-                android:layout_marginTop="-10dp"
+                android:layout_height="1050dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="0dp"
                 android:inputType="textMultiLine"
                 android:text="@string/ram"
